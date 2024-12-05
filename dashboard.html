@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Time Tracking Dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <button class="mode"><a href="#" style="background-color: hsl(235, 46%, 20%); text-decoration: none;">Mode</a></button>
+  <button type="logout" style="margin-left: 30px; color: white;" class="logout">Logout</button>
+  <h1 style="text-align: center; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Your Dashboard</h1>
+  <div class="container">
+    <div class="user">
+      <div class="image">
+        <img src="./images/image-jeremy.png" alt="Pic of Jeremy" height="50px">
+      </div>
+      <div class="report">Report for</div>
+      <div class="name">Jeremy<br>Robson</div>
+    </div>
+    
+    <div class="time">
+      <div class="daily"><button><a href="#" style="color: hsl(247, 76%, 79%); background-color: hsl(235, 46%, 20%); text-decoration: none;">Daily</a></button></div>
+      <div class="weekly"><button><a href="#" style="color: white; background-color: hsl(235, 46%, 20%); text-decoration: none">Weekly</a></button></div>
+      <div class="monthly"><button><a href="#" style="color: hsl(247, 76%, 79%); background-color: hsl(235, 46%, 20%); text-decoration: none">Monthly</a></button></div>
+    </div>
+    
+    <div class="work">
+      <div class="orange-box">
+        <img src="./images/icon-work.svg" alt="work briefcase">
+      </div>
+      <div class="blue-box">
+        <div class="title">
+          <p>Work</p>
+          <a href="#"><img class="ellipsis" src="./images/icon-ellipsis.svg"></a>   
+        </div>
+        <div class="work-info">
+            <p class="caps hide day">5hrs</p> <!-- daily -->
+            <p class="hide day">Yesterday - 7hrs</p> <!-- daily -->
+            <p class="caps week">32hrs</p> <!-- weekly -->
+            <p class="week">Last Week - 36hrs</p> <!-- weekly -->
+            <p class="caps hide month">103hrs</p> <!-- monthly -->
+            <p class="hide month">Last Month - 128hrs</p> <!-- monthly -->
+        </div>
+      </div>
+    </div>
+
+    <div class="play">
+      <div class="lightblue-box">
+        <img src="./images/icon-play.svg" alt="game console">
+      </div>
+      <div class="blue-box">
+        <div class="title">
+          <p>Play</p>
+          <a href="#"><img src="./images/icon-ellipsis.svg"></a>   
+        </div>
+        <div class="work-info">
+            <p class="caps hide">1hr</p> <!-- daily -->
+            <p class="hide">Yesterday - 2hrs</p> <!-- daily -->
+            <p class="caps">10hrs</p> <!-- weekly -->
+            <p>Last Week - 8hrs</p> <!-- weekly -->
+            <p class="caps hide">23hrs</p> <!-- monthly -->
+            <p class="hide">Last Month - 29hrs</p> <!-- monthly -->
+        </div>
+      </div>
+    </div>
+
+    <div class="study">
+      <div class="red-box">
+        <img src="./images/icon-study.svg" alt="book">
+      </div>
+      <div class="blue-box">
+        <div class="title">
+          <p>Study</p>
+               <a href="#"><img src="./images/icon-ellipsis.svg"></a>
+        </div>
+        <div class="work-info">
+            <p class="caps hide day">0hrs</p> <!-- daily -->
+            <p class="hide day">Yesterday - 1hr</p> <!-- daily -->
+            <p class="caps week">4hrs</p> <!-- weekly -->
+            <p class="week">Last Week - 7hrs</p> <!-- weekly -->
+            <p class="caps hide month">13hrs</p> <!-- monthly -->
+            <p class="hide month">Last Month - 19hrs</p> <!-- monthly -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="exercise">
+      <div class="green-box">
+        <img src="./images/icon-exercise.svg" alt="person running">
+      </div>
+      <div class="blue-box">
+        <div class="title">
+          <p>Exercise</p>
+          <a href="#"><img src="./images/icon-ellipsis.svg"></a>
+        </div>
+        <div class="work-info">
+            <p class="caps hide day">1hr</p> <!-- daily -->
+            <p class="hide day">Yesterday - 1hr</p> <!-- daily -->
+            <p class="caps week">4hrs</p> <!-- weekly -->
+            <p class="week">Last Week - 5hrs</p> <!-- weekly -->
+            <p class="caps hide month">11hrs</p> <!-- monthly -->
+            <p class="hide month">Last Month - 18hrs</p> <!-- monthly -->
+        </div>
+      </div>
+    </div>
+
+    <div class="social">
+      <div class="purple-box">
+        <img src="./images/icon-social.svg" alt="messages">
+      </div>
+      <div class="blue-box">
+        <div class="title">
+          <p>Social</p>
+          <a href="#"><img src="./images/icon-ellipsis.svg"></a>        
+        </div>
+        <div class="work-info">
+            <p class="caps hide day">1hr</p> <!-- daily -->
+            <p class="hide day">Yesterday - 3hrs</p> <!-- daily -->
+            <p class="caps week">5hrs</p> <!-- weekly -->
+            <p class="week">Last Week - 10hrs</p> <!-- weekly -->
+            <p class="caps hide month">21hrs</p> <!-- monthly -->
+            <p class="hide month">Last Month - 23hrs</p> <!-- monthly -->
+        </div>
+      </div>
+    </div>
+
+    <div class="self-care">
+      <div class="yellow-box">
+        <img src="./images/icon-self-care.svg" alt="book">
+      </div>
+      <div class="blue-box">
+        <div class="title">
+          <p>Self Care</p>
+          <a href="#"><img src="./images/icon-ellipsis.svg"></a>        
+        </div>
+        <div class="work-info">
+            <p class="caps hide day">0hrs</p> <!-- daily -->
+            <p class="hide day">Yesterday - 1hr</p> <!-- daily -->
+            <p class="caps week">2hrs</p> <!-- weekly -->
+            <p class="week">Last Week - 2hrs</p> <!-- weekly -->
+            <p class="caps hide month">7hrs</p> <!-- monthly -->
+            <p class="hide month">Last Month - 11hrs</p> <!-- monthly -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="dashboard.js" charset="utf-8"></script>
+</body>
+</html>

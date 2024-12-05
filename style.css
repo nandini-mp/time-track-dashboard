@@ -1,0 +1,412 @@
+* {
+    background-color: hsl(226, 43%, 10%);
+    font-family: "Rubik";
+    color: white;
+    box-sizing: border-box; 
+}
+
+.container {
+    height: 70vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 90px;
+    margin-left: 280px;
+    width: fit-content;
+    column-gap: 20px;
+    row-gap: 0px;   
+    padding: 10px;
+}
+
+.extend {
+    min-height: 300px;
+    width: 190px;
+    border-radius: 16px;
+    background-color: pink;
+    position: relative;
+    z-index: 0;
+}
+
+.user {
+    background-color: hsl(246, 80%, 60%);
+    width: 190px;
+    border-radius: 16px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+    height: 240px;
+}
+
+.report {
+    background-color: hsl(246, 80%, 60%);
+    font-size: 16px;
+    color: hsl(247, 76%, 79%);
+    margin-left: 5px;
+}
+
+.name {
+    background-color: hsl(246, 80%, 60%);
+    font-size: 30px;
+    font-weight: 10;
+    margin-left: 5px;
+}
+
+.image {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent;
+    border: 5px solid white;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.time,.daily,.weekly,.monthly {
+    background-color: hsl(235, 46%, 20%);
+}
+
+button {
+    background-color: hsl(235, 46%, 20%);
+    border: none;
+    font-size: 16px;
+    color: hsl(247, 76%, 79%);
+    margin-left: -5px;
+}
+
+.time {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 190px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    padding: 30px;
+    height: auto;
+    position: relative;
+    top:-15px;
+    padding-top: 50px;
+    min-height: 240px;
+}
+
+.daily,.weekly,.monthly {
+    padding: 10px;
+}
+
+.weekly,.monthly {
+    color: hsl(247, 76%, 79%);;
+}
+
+.work, .play, .study, .exercise, .social, .self-care {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 16px;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    padding: 0;
+}
+
+.orange-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: hsl(15, 100%, 70%);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    position: relative;
+    height: 50px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.title p{
+    font-size: 18px;
+    background-color: hsl(235, 46%, 20%);
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.title{
+    background-color: hsl(235, 46%, 20%);
+}
+
+.work-info p{
+    font-size: 14px;
+    color: hsl(247, 76%, 79%);
+    background-color: hsl(235, 46%, 20%);
+    margin: 5px 0;
+    padding-left: 5px;
+}
+
+.work-info p.caps {
+    color: white;
+    font-size: 45px;
+    font-weight: lighter;
+    background-color: hsl(235, 46%, 20%);
+    padding-left: 5px;
+}
+
+.work-info {
+    background-color: transparent;
+    height: auto;
+}
+
+.hide {
+    display: none;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.visible {
+    display: contents;
+}
+
+.mode {
+    border-radius: 40px;
+    height: 50px;
+    width: 80px;
+}
+
+.logout {
+    border-radius: 40px;
+    height: 50px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.light {
+    html, body {
+    margin: 0;           
+    padding: 0;          
+    height: 100%;        
+    background-color: hsl(235, 45%, 86%);
+    overflow-x: hidden;
+    padding-bottom: 100px;
+    }
+    .container {
+        background-color: hsl(235, 45%, 86%);
+    }
+    h1 {
+        color: hsl(226, 43%, 10%);
+        background-color: hsl(235, 45%, 86%);
+    }
+}
+
+.orange-box img {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    top: -5px;
+    background-color: transparent;
+    object-fit: contain;
+    height: auto;
+    width: 80px;
+    margin-left: 100px;
+}
+
+.blue-box {
+    background-color: hsl(235, 46%, 20%);
+    height: auto;
+    border-radius: 16px;
+    margin-top: -10px;
+    width: 220px;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.title a {
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.title aimg {
+    background-color: transparent;
+    border: none;
+    margin-left: 120px;
+}
+
+.exercise .titleimg {
+    margin-left: 90px;
+}
+
+.self-care .titleimg {
+    margin-left: 80px;
+}
+
+.social .titleimg {
+    margin-left: 100px;
+}
+
+.study .titleimg {
+    margin-left: 110px;
+}
+
+.lightblue-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: hsl(195, 74%, 62%);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    position: relative;
+    height: 50px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.lightblue-box img {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    top: -5px;
+    background-color: transparent;
+    object-fit: contain;
+    height: auto;
+    width: 80px;
+    margin-left: 100px;
+}
+
+.red-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: hsl(348, 100%, 68%);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    position: relative;
+    height: 50px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.red-box img {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    top: -5px;
+    background-color: transparent;
+    object-fit: contain;
+    height: auto;
+    width: 80px;
+    margin-left: 100px;
+}
+
+.green-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: hsl(145, 58%, 55%);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    position: relative;
+    height: 50px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.green-box img {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    top: -5px;
+    background-color: transparent;
+    object-fit: contain;
+    height: auto;
+    width: 80px;
+    margin-left: 100px;
+}
+
+.purple-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: hsl(264, 64%, 52%);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    position: relative;
+    height: 50px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.purple-box img {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    top: -5px;
+    background-color: transparent;
+    object-fit: contain;
+    height: auto;
+    width: 80px;
+    margin-left: 100px;
+}
+
+.yellow-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: hsl(43, 84%, 65%);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    position: relative;
+    height: 50px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.yellow-box img {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    top: -5px;
+    background-color: transparent;
+    object-fit: contain;
+    height: auto;
+    width: 80px;
+    margin-left: 100px;
+}
+
+@media (max-width: 800px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 100vh;
+        overflow-x: hidden;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        max-height: 100vh;
+        overflow-y: auto;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .user, .work, .play, .study, .exercise, .social, .self-care, .time{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+
+    .time {
+        margin-top: -20px;
+    }
+
+    .blue-box {
+        width: 100%;
+    }
+}
